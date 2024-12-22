@@ -1,0 +1,38 @@
+@use "style/variables.scss" as *;
+@use "style/reset.scss" as *;
+@use "style/utility.scss" as *;
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: $primary-dark;
+    background-color: $white;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    font-weight: 500;
+    color: $blue;
+    text-decoration: inherit;
+}
+a:hover {
+    color: $blue-dark;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+}
+
