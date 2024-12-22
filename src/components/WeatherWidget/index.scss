@@ -1,0 +1,40 @@
+@use '../../style/variables' as *;
+
+.WeatherWidget {
+  padding: 10px;
+  container-type: inline-size;
+  container-name: weather-widget;
+
+  &__header {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  &__desc {
+    display: flex;
+    column-gap: 5cqw;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__button {
+    font-weight: 600;
+    margin-left: auto;
+  }
+
+  hr {
+    height: 5cqw;
+    border: 1px solid $gray;
+  }
+}
+
+.weather__table {
+    width: 100%;
+
+    tr:nth-child(odd) td {
+      background-color: $gray-lightest;
+    }
+
+    td {
+      padding: 4px;
+      border: 1px solid $primary-light;
+    }
+}
