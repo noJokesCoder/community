@@ -11,6 +11,48 @@ export const localizationDict = {
             [localeTypeEnum.en]: 'Lang.:',
         },
     },
+    menu: {
+        meals: {
+            lunch: {
+                [localeTypeEnum.uk]: 'Обід',
+                [localeTypeEnum.en]: 'Lunch',
+            },
+            dinner: {
+                [localeTypeEnum.uk]: 'Вечеря',
+                [localeTypeEnum.en]: 'Dinner',
+            },
+        },
+        days: {
+            monday: {
+                [localeTypeEnum.uk]: 'Понеділок',
+                [localeTypeEnum.en]: 'Monday',
+            },
+            tuesday: {
+                [localeTypeEnum.uk]: 'Вівторок',
+                [localeTypeEnum.en]: 'Tuesday',
+            },
+            wednesday: {
+                [localeTypeEnum.uk]: 'Середа',
+                [localeTypeEnum.en]: 'Wednesday',
+            },
+            thursday: {
+                [localeTypeEnum.uk]: 'Четвер',
+                [localeTypeEnum.en]: 'Thursday',
+            },
+            friday: {
+                [localeTypeEnum.uk]: "П'ятниця",
+                [localeTypeEnum.en]: 'Friday',
+            },
+            saturday: {
+                [localeTypeEnum.uk]: 'Субота',
+                [localeTypeEnum.en]: 'Saturday',
+            },
+            sunday: {
+                [localeTypeEnum.uk]: 'Неділя',
+                [localeTypeEnum.en]: 'Sunday',
+            },
+        },
+    },
     weatherWidget: {
         title: {
             [localeTypeEnum.uk]: 'Погода в Вапенвельді',
