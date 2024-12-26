@@ -43,7 +43,7 @@ const WeatherWidget: React.FC = () => {
 
     return weather ? (
         <section id="weather" className="WeatherWidget">
-            <h4 className="WeatherWidget__header">{title[locale!]}</h4>
+            <h4 className="WeatherWidget__header section-header">{title[locale!]}</h4>
             <div className="WeatherWidget__desc">
                 <img
                     src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
@@ -125,11 +125,11 @@ const WeatherWidget: React.FC = () => {
                         </tr>
                         <tr>
                             <td>{table.visibility[locale!]}</td>
-                            <td className="align-right">{`${Math.round(weather.visibility / 1000)} км`}</td>
+                            <td className="align-right">{`${Math.round(weather.visibility / 1000)} ${locale === localeTypeEnum.en ? 'km' : 'км'}`}</td>
                         </tr>
                         <tr>
                             <td>{table.wind[locale!]}</td>
-                            <td className="align-right">{`${weather.wind.speed} м/сек`}</td>
+                            <td className="align-right">{`${weather.wind.speed} ${locale === localeTypeEnum.en ? 'm/s' : 'м/сек'}`}</td>
                         </tr>
                     </tbody>
                 </table>

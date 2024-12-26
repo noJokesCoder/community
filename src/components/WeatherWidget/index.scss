@@ -6,14 +6,18 @@
   container-name: weather-widget;
 
   &__header {
-    font-size: 1.5rem;
-    font-weight: 600;
+    margin-block: 1.5rem;
   }
+
   &__desc {
+    padding: 10px;
     display: flex;
     column-gap: 5cqw;
     flex-wrap: wrap;
     align-items: center;
+    border-radius: 8px;
+    border: 1px solid $primary-dark;
+    background-color: $gray-lightest;
   }
   &__button {
     font-weight: 600;
