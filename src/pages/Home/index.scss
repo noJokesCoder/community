@@ -1,28 +1,60 @@
-@use "../../style/variables.scss" as *;
+@use '../../style/variables.scss' as *;
+@use 'sass:color';
 
 .home {
-  &_hero {
-    display: flex;
-    place-items: center;
-    place-content: end;
-    width: 100%;
-    height: 65vh;
-    background-image: url('../../assets/glass.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  &_title {
-    color: $white;
-    padding: 1rem;
-    width: min(44ch, 100%);
-    border-radius: 8px 0 0 8px;
-    backdrop-filter: blur(6px);
-    background: transparentize($gray-dark, 0.8);
-
-    p {
-      text-align: end;
-      font-weight: 500;
+    &_hero {
+        display: flex;
+        place-items: center;
+        place-content: end;
+        width: 100%;
+        height: 65vh;
+        background-image: url('../../assets/glass.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-  }
+    &_title {
+        color: $white;
+        padding: 1rem;
+        width: min(44ch, 100%);
+        border-radius: 8px 0 0 8px;
+        backdrop-filter: blur(6px);
+        background: color.adjust($gray-dark, $alpha: 0.8);
+
+        p {
+            text-align: end;
+            font-weight: 500;
+        }
+    }
+    #kitchenMenu {
+        padding-inline: 10px;
+        margin-bottom: 1.5rem;
+
+        h3 {
+            margin-block: 1.5rem;
+        }
+        .ant-collapse {
+            &-item-active {
+                .ant-collapse-content-active {
+                    border-inline: 2px solid $blue-light;
+                }
+                .kitchen__collapse_text {
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+            &-header {
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 1.05rem;
+
+                &.isCurrentDay {
+                    background: $gray-lightest;
+                }
+                &.isPastDay {
+                    text-decoration-line: line-through;
+                }
+            }
+        }
+    }
 }
