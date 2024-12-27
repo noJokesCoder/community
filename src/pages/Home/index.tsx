@@ -33,7 +33,8 @@ const Home: React.FC = () => {
         }
         return {
             header:
-                weekDayArr.indexOf(key as keyof typeof days) < weekDayArr.indexOf(currentDay as keyof typeof days)
+                weekDayArr.indexOf(key as keyof typeof days) <
+                weekDayArr.indexOf(currentDay as keyof typeof days)
                     ? 'isPastDay'
                     : 'isFutureDay',
         };
@@ -108,8 +109,6 @@ export const loader_homePage = async () => {
         content_type: contentTypeEnum.kitchenMenu,
         locale: '*',
     });
-
-    console.log('KITCHEN_DATA', CMSkitchenMenu);
 
     return CMShomePage && CMSkitchenMenu
         ? {

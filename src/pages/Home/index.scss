@@ -1,6 +1,18 @@
 @use '../../style/variables.scss' as *;
 @use 'sass:color';
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
 .home {
     &_hero {
         display: flex;
@@ -19,7 +31,7 @@
         width: min(44ch, 100%);
         border-radius: 8px 0 0 8px;
         backdrop-filter: blur(6px);
-        background: color.adjust($gray-dark, $alpha: 0.8);
+        background: color.change($gray-dark, $alpha: 0.1);
 
         p {
             text-align: end;
@@ -29,6 +41,12 @@
     #kitchenMenu {
         padding-inline: 10px;
         margin-bottom: 1.5rem;
+
+        // appear animation:
+        animation-timeline: view();
+        animation-name: appear;
+        animation-fill-mode: both;
+        animation-duration: 1ms; /* required in Firefox */
 
         h3 {
             margin-block: 1.5rem;
