@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 export const useIntersectionObserver = (ref: React.RefObject<Element>) => {
     const [isVisible, setIsVisible] = useState<boolean>(false);
-    const intersectionCb = (entries: any) => {
+    const intersectionCb = (entries: IntersectionObserverEntry[]) => {
         const [entry] = entries;
 
         setIsVisible(entry.isIntersecting);
