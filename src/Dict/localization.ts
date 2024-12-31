@@ -101,4 +101,32 @@ export const localizationDict = {
             },
         },
     },
+    contactInfo: {
+        title: {
+            [localeTypeEnum.en]: 'Contact Info',
+            [localeTypeEnum.uk]: 'Контактна інформація',
+        },
+        tabs: {
+            address: {
+                [localeTypeEnum.en]: 'Address',
+                [localeTypeEnum.uk]: 'Адреса',
+            },
+            copyAddressBtn: {
+                [localeTypeEnum.uk]: 'Копіювати адресу',
+                [localeTypeEnum.en]: 'Copy address',
+            },
+            staff: {
+                [localeTypeEnum.en]: 'Staff',
+                [localeTypeEnum.uk]: 'Персонал',
+            },
+        },
+        locationManagerText: {
+            [localeTypeEnum.en]: 'Location manager is always available from Monday to Friday',
+            [localeTypeEnum.uk]: "Менеджер знаходиться на ресепшені з Понеділка по П'ятницю",
+        },
+        security: {
+            [localeTypeEnum.en]: 'Security officer is available 7 days a week',
+            [localeTypeEnum.uk]: 'Охоронець є на ресепшені щодня',
+        },
+    },
 };

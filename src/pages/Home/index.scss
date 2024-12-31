@@ -14,6 +14,14 @@
 }
 
 .home {
+    section:not(:first-of-type) {
+        padding-inline: 10px;
+        margin-bottom: 1.5rem;
+
+        .section-header {
+            margin-block-end: 1.5rem;
+        }
+    }
     &_hero {
         display: flex;
         place-items: center;
@@ -39,18 +47,12 @@
         }
     }
     #kitchenMenu {
-        padding-inline: 10px;
-        margin-bottom: 1.5rem;
-
         // appear animation:
         animation-timeline: view();
         animation-name: appear;
         animation-fill-mode: both;
         animation-duration: 1ms; /* required in Firefox */
 
-        h3 {
-            margin-block: 1.5rem;
-        }
         .ant-collapse {
             &-item-active {
                 .ant-collapse-content-active {
@@ -72,6 +74,24 @@
                 &.isPastDay {
                     text-decoration-line: line-through;
                 }
+            }
+        }
+    }
+    #contacts {
+        .ant-tabs-tab-btn {
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        .address {
+            display: grid;
+            gap: 1rem;
+            align-items: center;
+            grid-template-columns: 1fr 140px;
+
+            &__text {
+                font-weight: 500;
+                font-size: 1.05rem;
             }
         }
     }
