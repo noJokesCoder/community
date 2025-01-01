@@ -1,0 +1,18 @@
+@use "../../style/variables.scss" as *;
+
+.footer {
+  border-top: 1px solid $gray-dark;
+  background-color: $white;
+  color: $gray-dark;
+  padding: 1rem;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}

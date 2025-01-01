@@ -5,14 +5,10 @@
   container-type: inline-size;
   container-name: weather-widget;
 
-  &__header {
-    margin-block: 1.5rem;
-  }
-
   &__desc {
     padding: 10px;
     display: flex;
-    column-gap: 5cqw;
+    column-gap: clamp(1rem, 3cqw, 125px);
     flex-wrap: wrap;
     align-items: center;
     border-radius: 8px;
@@ -28,17 +24,4 @@
     height: 5cqw;
     border: 1px solid $gray;
   }
-}
-
-.weather__table {
-    width: 100%;
-
-    tr:nth-child(odd) td {
-      background-color: $gray-lightest;
-    }
-
-    td {
-      padding: 4px;
-      border: 1px solid $primary-light;
-    }
 }

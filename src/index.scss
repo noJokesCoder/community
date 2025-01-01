@@ -41,3 +41,20 @@ h1 {
     font-weight: 800;
     letter-spacing: 1.2px;
 }
+
+.ant-btn {
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+
+    tr:nth-child(odd) td {
+        background-color: $gray-lightest;
+    }
+
+    td {
+        padding: 4px;
+        border: 1px solid $primary-light;
+    }
+}

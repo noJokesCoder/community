@@ -1,6 +1,10 @@
 import { localeTypeEnum } from '@/types/CMS';
 
 export const localizationDict = {
+    copyTextNotification: {
+        [localeTypeEnum.uk]: 'Скопійовано 👌',
+        [localeTypeEnum.en]: 'Copied 👌',
+    },
     langSwitch: {
         notification: {
             [localeTypeEnum.uk]: 'Мова сайту - Українська',
@@ -99,6 +103,42 @@ export const localizationDict = {
                 [localeTypeEnum.uk]: 'Максимальна темп. протягом дня:',
                 [localeTypeEnum.en]: 'Maximum temperature',
             },
+        },
+    },
+    contactInfo: {
+        title: {
+            [localeTypeEnum.en]: 'Contact Info',
+            [localeTypeEnum.uk]: 'Контактна інформація',
+        },
+        tabs: {
+            address: {
+                [localeTypeEnum.en]: 'Address',
+                [localeTypeEnum.uk]: 'Адреса',
+            },
+            copyAddressBtn: {
+                [localeTypeEnum.uk]: 'Копіювати адресу',
+                [localeTypeEnum.en]: 'Copy address',
+            },
+            staff: {
+                [localeTypeEnum.en]: 'Staff',
+                [localeTypeEnum.uk]: 'Персонал',
+            },
+            email: {
+                [localeTypeEnum.en]: 'Email',
+                [localeTypeEnum.uk]: 'Пошта',
+            },
+            phone: {
+                [localeTypeEnum.en]: 'Phone number',
+                [localeTypeEnum.uk]: 'Номер телефону',
+            },
+        },
+        locationManagerText: {
+            [localeTypeEnum.en]: 'Location manager is always available from Monday to Friday',
+            [localeTypeEnum.uk]: "Менеджер знаходиться на ресепшені з Понеділка по П'ятницю",
+        },
+        security: {
+            [localeTypeEnum.en]: 'Security officer is available 7 days a week',
+            [localeTypeEnum.uk]: 'Охоронець є на ресепшені щодня',
         },
     },
 };
