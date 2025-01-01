@@ -47,12 +47,6 @@
         }
     }
     #kitchenMenu {
-        // appear animation:
-        animation-timeline: view();
-        animation-name: appear;
-        animation-fill-mode: both;
-        animation-duration: 1ms; /* required in Firefox */
-
         .ant-collapse {
             &-item-active {
                 .ant-collapse-content-active {
@@ -78,6 +72,14 @@
         }
     }
     #contacts {
+        min-height: 300px;
+        table {
+            margin-top: 1rem;
+
+            & td:last-child {
+                text-align: end;
+            }
+        }
         .ant-tabs-tab-btn {
             font-weight: 500;
             font-size: 1.1rem;
@@ -94,5 +96,14 @@
                 font-size: 1.05rem;
             }
         }
+    }
+
+    #contacts,
+    #kitchenMenu {
+        // appear animation:
+        animation-timeline: view(y 100px auto);
+        animation-name: appear;
+        animation-fill-mode: both;
+        animation-duration: 1ms; /* required in Firefox */
     }
 }
