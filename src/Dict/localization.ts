@@ -1,6 +1,10 @@
 import { localeTypeEnum } from '@/types/CMS';
 
 export const localizationDict = {
+    copyTextNotification: {
+        [localeTypeEnum.uk]: 'Скопійовано 👌',
+        [localeTypeEnum.en]: 'Copied 👌',
+    },
     langSwitch: {
         notification: {
             [localeTypeEnum.uk]: 'Мова сайту - Українська',
@@ -118,6 +122,14 @@ export const localizationDict = {
             staff: {
                 [localeTypeEnum.en]: 'Staff',
                 [localeTypeEnum.uk]: 'Персонал',
+            },
+            email: {
+                [localeTypeEnum.en]: 'Email',
+                [localeTypeEnum.uk]: 'Пошта',
+            },
+            phone: {
+                [localeTypeEnum.en]: 'Phone number',
+                [localeTypeEnum.uk]: 'Номер телефону',
             },
         },
         locationManagerText: {
