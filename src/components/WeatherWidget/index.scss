@@ -1,27 +1,32 @@
 @use '../../style/variables' as *;
 
 .WeatherWidget {
-  padding: 10px;
-  container-type: inline-size;
-  container-name: weather-widget;
-
-  &__desc {
     padding: 10px;
-    display: flex;
-    column-gap: clamp(1rem, 3cqw, 125px);
-    flex-wrap: wrap;
-    align-items: center;
-    border-radius: 8px;
-    border: 1px solid $primary-dark;
-    background-color: $gray-lightest;
-  }
-  &__button {
-    font-weight: 600;
-    margin-left: auto;
-  }
+    container-type: inline-size;
+    container-name: weather-widget;
 
-  hr {
-    height: 5cqw;
-    border: 1px solid $gray;
-  }
+    &__desc {
+        padding: 10px;
+        display: flex;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid $primary-dark;
+        background-color: $gray-lightest;
+        font-size: 0.75rem;
+
+        h5 {
+            font-size: 1em;
+        }
+    }
+    &__button {
+        font-weight: 600;
+        margin-left: auto;
+    }
+
+    hr {
+        height: 5cqw;
+        border: 1px solid $gray;
+    }
 }

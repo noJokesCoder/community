@@ -17,6 +17,8 @@
     section:not(:first-of-type) {
         padding-inline: 10px;
         margin-bottom: 1.5rem;
+        margin-inline: auto;
+        max-width: 800px;
 
         .section-header {
             margin-block-end: 1.5rem;
