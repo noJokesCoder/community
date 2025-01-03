@@ -75,6 +75,11 @@
     }
     #contacts {
         min-height: 300px;
+
+        .staff {
+            overflow-x: auto;
+        }
+
         table {
             margin-top: 1rem;
 
