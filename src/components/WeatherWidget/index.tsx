@@ -49,7 +49,7 @@ const WeatherWidget: React.FC = () => {
                     src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
                     alt={weather.weather[0].description}
                 />
-                <h5>
+                <h5 className={isMobile ? 'major-info--mobile' : 'major-info'}>
                     <span>{weather.weather[0].description}</span>
                     <br />
                     <span>{`${paragraph[locale!]} ${Math.round(weather.main.temp)}℃`}</span>

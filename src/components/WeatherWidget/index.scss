@@ -16,8 +16,12 @@
         background-color: $gray-lightest;
         font-size: 0.75rem;
 
-        h5 {
+        & .major-info {
             font-size: 1em;
+
+            &--mobile {
+                font-size: 1rem;
+            }
         }
     }
     &__button {

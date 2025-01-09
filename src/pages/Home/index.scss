@@ -43,6 +43,12 @@
         backdrop-filter: blur(6px);
         background: color.change($gray-dark, $alpha: 0.1);
 
+        h1 {
+            letter-spacing: 2px;
+            font-stretch: semi-expanded;
+            text-shadow: 4px -4px 6px $blue-dark;
+        }
+
         p {
             text-align: end;
             font-weight: 500;
