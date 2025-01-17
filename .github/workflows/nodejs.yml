@@ -21,4 +21,5 @@ jobs:
                   repoToken: ${{ secrets.GITHUB_TOKEN }}
                   firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_GROOT_STOKKERT }}
                   projectId: groot-stokkert
+                  channelId: 'preview'
             - run: npm run deploy
